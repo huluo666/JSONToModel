@@ -112,7 +112,7 @@
 -(NSString *)autoCodeWithJsonDict:(NSDictionary *)dic modelKey:(NSString *)classKey
 {
     if (classKey.length==0||classKey==nil) {
-        classKey=@"RootModel";
+        classKey=@"<#RootModel#>";
     }
     if ([dic isKindOfClass:[NSDictionary class]]==NO) {
         return @"";
